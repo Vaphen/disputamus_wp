@@ -89,12 +89,8 @@ nav ul ul{
 
 nav ul li ul li{
   display: list-item;
-  border: 1px solid black;
-}
-
-nav ul li ul li:hover{
-	background-color: #000000;
-	border: 1px solid white;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
 nav ul li:hover ul{
@@ -170,12 +166,18 @@ a {
 	color: white;
 }
 
-#menue li:not(.current_page_item) a:hover {
+
+#menue li:not(.current_page_item):not(.current_page_parent) a:hover {
 	background-color: rgba(120, 120, 120, 0.8);
 }
 
-.current_page_item {
+ul .current_page_item, .current_page_parent {
 	background-color: #f19c38;
+}
+
+.children .current_page_item {
+	border-color: white;
+   background-color: rgba(220, 220, 220);
 }
 
 i {

@@ -9,29 +9,6 @@
   		</p>
   		<nav id="menue">
   			<?php wp_list_pages('title_li='); ?>
-    		<!--<ul>
-      		<li>
-      			<a href="index.php" id="menueSelected">Startseite</a>
-      		</li>
-
-      		<li>
-        			<a href="./kategorien/">Kategorien</a>
-
-        			<ul>
-          			<li>
-            			<a href="./kategorien/it/">IT</a>
-          			</li>
-
-          			<li>
-            			<a href="./kategorien/politik/">Politik</a>
-          			</li>
-
-          			<li>
-            			<a href="./kategorien/sonstiges/">Sonstiges</a>
-          			</li>
-        			</ul>
-      		</li>
-    		</ul>-->
   		</nav>
 
 	<?php if (have_posts()) : ?>

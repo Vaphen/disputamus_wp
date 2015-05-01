@@ -3,7 +3,7 @@
 
 	<body>
   		<p id="logo">
-  			<a href="<?php get_home_url(); ?>">
+  			<a href="<?php get_home; ?>">
   				<img src="http://localhost/wordpress/wp-content/uploads/2015/04/logo.png" alt="logo">
   			</a>
   		</p>
@@ -45,7 +45,7 @@
   			<section>
 				<article>
 	      		<h1>
-	      			<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+	      			<?php the_title(); ?>
 	      			<!-- Wo bin ich hier? -->
 	      		</h1>
 					

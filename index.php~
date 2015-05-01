@@ -3,11 +3,10 @@
 
 	<body>
   		<p id="logo">
-  			<a href="<?php get_option('home'); ?>">
-  				<img src="<?php get_home_url(); ?>/bilder/logo.png" alt="logo">
+  			<a href="<?php echo get_option('home'); ?>">
+  				<img src="<?php echo wp_logout_url( $redirect ); ?>" alt="logo">
   			</a>
   		</p>
-
   		<nav id="menue">
   			<?php wp_list_pages('title_li='); ?>
     		<!--<ul>
