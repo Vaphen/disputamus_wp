@@ -1,0 +1,198 @@
+/*
+Theme Name: MyTheme
+Theme URI: Not existant
+Author: Aaron Röhl
+Author URI: Not existant
+Description: Own Template for disputamus
+Version: 0.0.9
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@media only screen and (min-width: 1501px) {
+  #main{
+	  width: 75%;
+  }
+  #menueRandArt {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1500px) {
+  #main{
+	  width: 90%;
+  }
+  #menueRandArt {
+    display: inline-block;
+  }
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+body {
+	font-family: arial;
+	font-size: 1.1em;
+   background-color: #414141;
+ 	//background-image: url('./bilder/background.png');
+ 	repeat;
+}
+
+#container {
+  clear: both;
+}
+
+#menue {
+	background-color: rgba(100, 100, 100, 0.6);
+	height: auto;
+  text-align: center;
+  color: white;
+}
+
+#logo {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 10px;
+  text-align: center;
+  background-image: url('./bilder/background.png');
+}
+
+#logo img{
+  padding: 0.5em 0.5em;
+  -moz-box-shadow:    inset 0 0 10px #FFFFFF;
+  -webkit-box-shadow: inset 0 0 10px #FFFFFF;
+  box-shadow:         inset 0 0 10px #FFFFFF;
+}
+
+nav ul {
+  list-style: none; 
+}
+
+nav ul li {
+   display: inline-block; 
+} 
+
+nav ul ul{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+}  
+
+nav ul li ul li{
+  display: list-item;
+  border: 1px solid black;
+}
+
+nav ul li ul li:hover{
+	background-color: #000000;
+	border: 1px solid white;
+}
+
+nav ul li:hover ul{
+  display: block;
+}
+
+h1 {
+   color: white;
+   text-shadow: 1px 1px 2px black;
+	width: 92%;
+   font-size: 1em;
+	padding-left: 4%;
+	padding-right: 4%;
+	border-radius: 5px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	background-color: #2E96FF;
+}
+
+
+
+
+
+article{
+   padding: 20px 5% 20px 5%;
+   text-align: justify;
+   color: lightgrey;
+}
+
+footer{
+	margin-top: 10px;
+  width: 100%;
+  font-size: 1em;   
+  border-top: 0.3em solid #f19c38;
+}
+
+footer table {
+	padding-top: 1%;
+  margin: 0px auto;
+}
+
+footer th {
+  text-align: left;
+  color: grey;
+  padding-bottom: 5px;
+}
+
+footer td {
+  width: 10em;
+  padding: 2px 0px;
+}
+
+footer a {
+	color: white;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+a {
+	color: orange;
+  text-decoration: none;
+}
+
+#menue a {
+	font-size: 1.3em;
+	display: inline-block;
+	padding: 0.3em 5px;
+	width: 170px;
+	color: white;
+}
+
+#menue li:not(.current_page_item) a:hover {
+	background-color: rgba(120, 120, 120, 0.8);
+}
+
+.current_page_item {
+	background-color: #f19c38;
+}
+
+i {
+  color: white;
+}
+
+#subheader {
+  font-size: 20px;
+  color: grey;
+}
+
+#header {
+	height: auto;
+	width: 85%;
+	margin: 0px auto;
+	margin-bottom: 2%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.8em;
+}         
